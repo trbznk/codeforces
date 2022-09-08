@@ -1,0 +1,5 @@
+k, n, w = input().split()
+k, n, w = int(k), int(n), int(w)
+dollar = sum([i*k for i in range(1, w+1)])
+needs = max(0, dollar-n)
+print(needs)
